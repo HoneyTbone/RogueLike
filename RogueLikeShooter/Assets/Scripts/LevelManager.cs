@@ -31,7 +31,7 @@ public class LevelManager : MonoBehaviour
     void BuildRooms(int roomCount)
     {
         posToSpawn = this.transform;
-        var yRot = 0;
+        var yRot = Random.Range(0,359);
         int connectionCounter = 1;
         for (int i = roomCount; i > 0; i--)
         {
